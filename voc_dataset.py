@@ -146,7 +146,7 @@ class CustomDetection(data.Dataset):
             image, boxes, labels = preproc_for_train(image, boxes, labels, opt.min_size, opt.mean)
             image = torch.from_numpy(image)
             
-        if len(labels) == 0:
+        if len(labels) == 0 and self.type == 'test':
             target = np.array([])
         else:
             target = np.concatenate([boxes, labels.reshape(-1,1)], axis=1)
