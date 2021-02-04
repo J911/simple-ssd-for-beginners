@@ -74,7 +74,7 @@ if __name__ == '__main__':
     multibox_encoder = MultiBoxEncoder(opt)
     
     image_sets = [['2007', 'test']]
-    test_dataset = CustomDetection(opt, '/content/gdrive/MyDrive/Detection/VirtualTrafficSignDetectionDB', dbtype='test')
+    test_dataset = CustomDetection(opt, '/content/gdrive/MyDrive/SSD/VirtualTrafficSignDetectionDB', dbtype='test')
     
     os.makedirs(output_dir, exist_ok=True)
     
