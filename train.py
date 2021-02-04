@@ -62,7 +62,7 @@ if __name__ == '__main__':
     mb = MultiBoxEncoder(opt)
         
     image_sets = [['2007', 'trainval'], ['2012', 'trainval']]
-    dataset = CustomDetection(opt, '/content/gdrive/MyDrive/Detection/VirtualTrafficSignDetectionDB', dbtype='train')
+    dataset = CustomDetection(opt, '/content/gdrive/MyDrive/SSD/VirtualTrafficSignDetectionDB', dbtype='train')
     dataloader = torch.utils.data.DataLoader(dataset, batch_size=opt.batch_size, collate_fn=detection_collate, num_workers=4)
 
     criterion = MultiBoxLoss(opt.num_classes, opt.neg_radio).to(device)
