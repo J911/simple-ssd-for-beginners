@@ -7,7 +7,7 @@ class Config:
 
 	
     #存放voc数据集的地址
-    VOC_ROOT = '/content/gdrive/MyDrive/Detection/VirtualTrafficSignDetectionDB'
+    VOC_ROOT = '/content/gdrive/MyDrive/SSD/VirtualTrafficSignDetectionDB'
 
     #分类的类别数(包括了背景算一类)
     num_classes = 11
